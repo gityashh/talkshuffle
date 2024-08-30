@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+nav{
+    height: 7%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-inline: 3%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+    background-color: white;
+}
+
+.profile{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile .profile-picture{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-picture img{
+    width: 100%;
+    object-fit: cover;
+}
+.name{
+    font-size: 1.3vw;
+}
+.username{
+    font-size: 0.8vw;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.call-features{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 8%;
+    
+}
+
+.call-features button{
+    border: none;
+    font-size: 1.8vw;
+    color: #21978B;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.chats{
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    padding-top: 8vh;
+    padding-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chats .messagebubble{
+    width: 100%;
+    display: flex;
+}
+.chats .right{
+    justify-content: end;
+}
+.chats .left{
+    justify-content: start;
+}
+.chats .sender-message{
+    padding-inline: 30px;
+    padding-block: 30px;
+    background-color: #21978B;
+    max-width: 37%;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    color: white;
+}
+.chats .receiver-message{
+    padding-inline: 30px;
+    padding-block: 30px;
+    background-color: #00000015;
+    max-width: 37%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    color: black;
+}
+
+
+footer{
+    height: 7%;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0%;
+    background-color: #ffffff;
+    padding-inline: 8%;
+}
+
+footer .message-input{
+    width: 80%;
+    padding: 14px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1vw;
+    outline: none;
+}
+
+footer button{
+    border: none;
+    font-size: 1.8vw;
+    color: #21978B;
+    font-weight: 100;
+    background-color: transparent;
+    cursor: pointer;
+}

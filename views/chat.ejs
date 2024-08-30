@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="/stylesheets/chat.css">
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <div class="profile">
+                <div class="profile-picture">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="display-name">
+                    <div class="name">Yash</div>
+                    <div class="username">@<span>y44sh</span></div>
+                </div>
+            </div>
+            <div class="call-features">
+                <button class="call">
+                    <i class="ri-phone-line"></i>
+                </button>
+                <button class="video-call">
+                    <i class="ri-video-on-line"></i>
+                </button>
+            </div>
+        </nav>
+        <section class="chats">
+            <div class="messagebubble right">
+                <div class="sender-message">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet doloribus tempora omnis accusantium corrupti.</p>
+                </div>
+            </div> 
+            <div class="messagebubble left">
+                <div class="receiver-message">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet doloribus tempora omnis accusantium corrupti.</p>
+                </div>
+            </div> 
+        </section>
+        <footer>
+            <button><i class="ri-image-line"></i></button>
+            <input class="message-input" placeholder="Type your message" type="text">
+            <button><i class="ri-emoji-sticker-line"></i></button>
+            <button> <i class="ri-send-plane-2-line"></i></button>
+        </footer>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        io();
+    </script>
+</body>
+</html>
